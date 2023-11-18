@@ -1,4 +1,4 @@
-# [lynis](#lynis)
+# [Ansible role lynis](#lynis)
 
 Install and configure lynis on your system.
 
