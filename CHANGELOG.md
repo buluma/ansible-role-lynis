@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-lynis/tree/HEAD)
+## [v0.1.2](https://github.com/buluma/ansible-role-lynis/tree/v0.1.2) (2023-12-25)
 
-[Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v0.1.1...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v0.1.1...v0.1.2)
 
 **Closed issues:**
 
