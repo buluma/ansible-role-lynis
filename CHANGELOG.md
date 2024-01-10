@@ -2,6 +2,14 @@
 
 ## [v0.2.0](https://github.com/buluma/ansible-role-lynis/tree/v0.2.0) (2024-01-02)
 
+[Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v0.2.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump buluma/dependabot-auto-merge-action from 2.0.2 to 2.1.1 [\#16](https://github.com/buluma/ansible-role-lynis/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v0.2.0](https://github.com/buluma/ansible-role-lynis/tree/v0.2.0) (2024-01-02)
+
 [Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v0.1.2...v0.2.0)
 
 **Closed issues:**
