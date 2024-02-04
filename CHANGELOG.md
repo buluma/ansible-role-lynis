@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-lynis/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v0.4.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump release-drafter/release-drafter from 5 to 6 [\#18](https://github.com/buluma/ansible-role-lynis/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.4.0](https://github.com/buluma/ansible-role-lynis/tree/v0.4.0) (2024-01-20)
 
 [Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v0.3.0...v0.4.0)
