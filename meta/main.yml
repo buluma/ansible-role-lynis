@@ -11,10 +11,11 @@ galaxy_info:
   platforms:
     - name: Amazon
       versions:
-        - Candidate
+        - all
     - name: EL
       versions:
         - "8"
+        - "9"
     - name: Debian
       versions:
         - all
