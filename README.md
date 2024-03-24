@@ -90,7 +90,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|[Amazon](https://hub.docker.com/repository/docker/buluma/amazonlinux/general)|2018.03, 2023|
+|[Amazon](https://hub.docker.com/repository/docker/buluma/amazonlinux/general)|all|
 |[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|8, 9|
 |[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|all|
 |[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|all|

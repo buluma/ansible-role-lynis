@@ -49,6 +49,8 @@ jobs:
           - image: "amazonlinux"
             tag: "1"
           - image: "amazonlinux"
+            tag: "latest"
+          - image: "amazonlinux"
             tag: "2023"
           - image: "enterpriselinux"
             tag: "8"
