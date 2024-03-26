@@ -14,8 +14,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 ---
 - name: Converge
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   roles:
     - role: buluma.lynis
@@ -27,8 +27,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  gather_facts: no
-  become: yes
+  gather_facts: false
+  become: true
 
   roles:
     - role: buluma.bootstrap
@@ -56,10 +56,10 @@ lynis_version: "3.0.6"
 lynis_output: "{{ lynis_destination }}/{{ ansible_date_time.date }}-audit_system.txt"
 
 # Run lynis on execution of the playbook?
-lynis_run_now: yes
+lynis_run_now: true
 
 # Schedule a repetetive job?
-lynis_cronjob: yes
+lynis_cronjob: true
 ```
 
 ## [Requirements](#requirements)
