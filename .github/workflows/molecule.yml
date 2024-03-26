@@ -48,8 +48,6 @@ jobs:
         config:
           - image: "docker-molecule-images"
             tag: "amazonlinux2023"
-          - image: "docker-molecule-images"
-            tag: "amazonlinux1"
           - image: "enterpriselinux"
             tag: "8"
           - image: "enterpriselinux"
@@ -70,8 +68,6 @@ jobs:
             tag: "rawhide"
           - image: "docker-molecule-images"
             tag: "opensuse"
-          - image: "docker-molecule-images"
-            tag: "ubuntu_latest"
           - image: "docker-molecule-images"
             tag: "focal"
           - image: "docker-molecule-images"
@@ -94,6 +90,8 @@ jobs:
         with:
           image: ${{ matrix.config.image }}
           tag: ${{ matrix.config.tag }}
+      - name: Running Role Test
+        run: ansible-galaxy role import --api-key ${{ secrets.galaxy_api_key }} buluma ${{ github.event.repository.name }}
 
   dependabot:
     needs:
@@ -118,13 +116,3 @@ jobs:
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  # test_role:
-  #   needs:
-  #     - lint
-  #     - test
-  #   runs-on: ubuntu-20.04
-  #
-  #   steps:
-  #     - uses: "actions/checkout@master"
-  #     - name: Test Role
-  #       run: "ansible-galaxy role import --api-key {{ secrets.galaxy_api_key }} buluma {{ role_name }}"
