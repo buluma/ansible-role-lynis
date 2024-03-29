@@ -46,8 +46,10 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "docker-molecule-images"
-            tag: "amazonlinux2023"
+          - image: "amazonlinux"
+            tag: "1"
+          - image: "amazonlinux"
+            tag: "latest"
           - image: "enterpriselinux"
             tag: "8"
           - image: "enterpriselinux"
@@ -76,8 +78,6 @@ jobs:
             tag: "jammy"
           - image: "docker-molecule-images"
             tag: "lunar"
-          - image: "docker-molecule-images"
-            tag: "noble"
           - image: "docker-molecule-images"
             tag: "kalilinux"
     steps:
