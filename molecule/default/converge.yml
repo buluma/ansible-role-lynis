@@ -13,4 +13,4 @@
   roles:
     - role: buluma.cron
     - role: buluma.git
-    - role: ansible-role-lynis
+    - role: buluma.lynis
