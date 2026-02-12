@@ -5,4 +5,4 @@
 repository:
   description: Install and configure lynis on your system.
   homepage: https://buluma.github.io/
-  topics: lynis, ansible, molecule, tox, playbook
+  topics: lynis, ansible, molecule, playbook
