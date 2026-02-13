@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-lynis/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v24.3.31...HEAD)
+
+**Closed issues:**
+
+- Update action [\#11](https://github.com/buluma/ansible-role-lynis/issues/11)
+- rebuild action [\#10](https://github.com/buluma/ansible-role-lynis/issues/10)
+
 ## [v24.3.31](https://github.com/buluma/ansible-role-lynis/tree/v24.3.31) (2024-03-30)
 
 [Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v0.4.0...v24.3.31)
