@@ -6,29 +6,29 @@ galaxy_info:
   description: Install and configure lynis on your system.
   license: Apache-2.0
   company: none
-  min_ansible_version: '2.12'
+  min_ansible_version: "2.12"
   platforms:
     - name: Amazon
       versions:
         - all
-  - name: EL
-    versions:
-    - all
-  - name: Debian
-    versions:
-    - all
-  - name: Fedora
-    versions:
-    - all
-  - name: opensuse
-    versions:
-    - all
-  - name: Ubuntu
-    versions:
-    - all
-  - name: Kali
-    versions:
-    - all
+    - name: EL
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: opensuse
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Kali
+      versions:
+        - all
   galaxy_tags:
     - lynis
 dependencies: []

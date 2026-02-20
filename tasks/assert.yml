@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test if lynis_destination is set correctly
   ansible.builtin.assert:
     that:
