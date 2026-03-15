@@ -9,6 +9,10 @@
 - Update action [\#11](https://github.com/buluma/ansible-role-lynis/issues/11)
 - rebuild action [\#10](https://github.com/buluma/ansible-role-lynis/issues/10)
 
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#25](https://github.com/buluma/ansible-role-lynis/pull/25) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v24.3.31](https://github.com/buluma/ansible-role-lynis/tree/v24.3.31) (2024-03-30)
 
 [Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v0.4.0...v24.3.31)
