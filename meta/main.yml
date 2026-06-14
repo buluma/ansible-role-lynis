@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Michael Buluma
+  author: buluma
   namespace: buluma
   role_name: lynis
   description: Install and configure lynis on your system.
