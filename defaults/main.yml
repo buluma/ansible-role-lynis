@@ -8,7 +8,7 @@ lynis_destination: "/tmp/lynis"
 lynis_version: "3.0.6"
 
 # Where to save the output of a report.
-lynis_output: "{{ lynis_destination }}/{{ ansible_facts.date_time.date }}-audit_system.txt"
+lynis_output: "{{ lynis_destination }}/{{ ansible_date_time.date }}-audit_system.txt"
 
 # Run lynis on execution of the playbook?
 lynis_run_now: true
