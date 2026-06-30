@@ -116,3 +116,7 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [Michael Buluma](https://buluma.github.io/)
+
+### Get Help
+- Report issues: https://github.com/buluma/ansible-role-lynis/issues/new
+- See docs: https://docs.ansible.com/collection/gallery/ansible-role-lynis
