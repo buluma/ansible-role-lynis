@@ -20,7 +20,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   pre_tasks:
     - name: Update apt cache.
       apt: update_cache=yes cache_valid_time=600
-      when: ansible_os_family == 'Debian'
+      when: ansible_facts['os_family'] == 'Debian'
       changed_when: false
 
   roles:
@@ -35,8 +35,15 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  gather_facts: false
   become: true
+  gather_facts: false
+
+  pre_tasks:
+    - name: Install sudo if missing
+      ansible.builtin.raw: "{{ ansible_pkg_mgr | default('dnf') }} install -y sudo"
+      become: false
+      changed_when: false
+      failed_when: false
 
   roles:
     - role: buluma.bootstrap
@@ -59,7 +66,7 @@ lynis_destination: "/tmp/lynis"
 lynis_version: "3.0.6"
 
 # Where to save the output of a report.
-lynis_output: "{{ lynis_destination }}/{{ ansible_date_time.date }}-audit_system.txt"
+lynis_output: "{{ lynis_destination }}/{{ ansible_facts['date_time'].date }}-audit_system.txt"
 
 # Run lynis on execution of the playbook?
 lynis_run_now: true
@@ -92,14 +99,14 @@ Here is an overview of related roles:
 
 ## [Compatibility](#compatibility)
 
-This role has been tested on these [container images](https://hub.docker.com/u/robertdebock):
+This role has been tested on these [container images](https://hub.docker.com/u/buluma):
 
 |container|tags|
 |---------|----|
-|[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|all|
-|[Debian](https://hub.docker.com/r/robertdebock/debian)|all|
-|[Fedora](https://hub.docker.com/r/robertdebock/fedora)|all|
-|[Ubuntu](https://hub.docker.com/r/robertdebock/ubuntu)|all|
+|[EL](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
+|[Debian](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
+|[Fedora](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
+|[Ubuntu](https://hub.docker.com/r/buluma/docker-molecule-images)|all|
 
 The minimum version of Ansible required is 2.12, tests have been done on:
 
@@ -115,8 +122,5 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 
 ## [Author Information](#author-information)
 
-[Michael Buluma](https://buluma.github.io/)
+[buluma](https://buluma.github.io/)
 
-### Get Help
-- Report issues: https://github.com/buluma/ansible-role-lynis/issues/new
-- See docs: https://docs.ansible.com/collection/gallery/ansible-role-lynis
