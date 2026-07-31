@@ -1,5 +1,9 @@
 # Changelog
 
+## [v26.6.2](https://github.com/buluma/ansible-role-lynis/tree/v26.6.2) (2026-07-21)
+
+[Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v26.6.1...v26.6.2)
+
 ## [v26.6.1](https://github.com/buluma/ansible-role-lynis/tree/v26.6.1) (2026-06-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-lynis/compare/v26.6.0...v26.6.1)
